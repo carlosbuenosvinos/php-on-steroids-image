@@ -1,5 +1,5 @@
-# PHP 7 with Opcache, Bcmath, Intl
-FROM php:cli
+# PHP-FPM 7 with opcache, bcmath and intl extensions
+FROM php:fpm
 MAINTAINER Carlos Buenosvinos <carlos.buenosvinos@gmail.com>
 
 RUN apt-get update && apt-get install -y \
